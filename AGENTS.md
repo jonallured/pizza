@@ -3,6 +3,10 @@
 - Never commit directly to main
 - Always create a feature branch for changes
 - Push the branch and open a PR
+- After a PR is merged, clean up locally:
+  - Switch to main and pull
+  - Delete the local feature branch
+  - Prune stale remote tracking refs
 
 # Commit Messages
 
