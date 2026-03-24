@@ -1,0 +1,12 @@
+{
+  "name": "pizza",
+  "version": "0.1.0",
+  "description": "Jon's personal pi configuration — skills, extensions, prompts, and themes",
+  "keywords": ["pi-package"],
+  "pi": {
+    "extensions": ["extensions"],
+    "skills": ["skills"],
+    "prompts": ["prompts"],
+    "themes": ["themes"]
+  }
+}
