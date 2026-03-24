@@ -2,11 +2,28 @@
   "name": "pizza",
   "version": "0.1.0",
   "description": "Jon's personal pi configuration — skills, extensions, prompts, and themes",
-  "keywords": ["pi-package"],
+  "keywords": [
+    "pi-package"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
   "pi": {
-    "extensions": ["extensions"],
-    "skills": ["skills"],
-    "prompts": ["prompts"],
-    "themes": ["themes"]
+    "extensions": [
+      "extensions"
+    ],
+    "skills": [
+      "skills"
+    ],
+    "prompts": [
+      "prompts"
+    ],
+    "themes": [
+      "themes"
+    ]
+  },
+  "devDependencies": {
+    "@mariozechner/pi-coding-agent": "^0.62.0",
+    "typescript": "^6.0.2"
   }
 }
