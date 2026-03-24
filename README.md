@@ -19,6 +19,20 @@ prompts/      — Reusable prompt templates (.md files)
 themes/       — Custom themes (.json files)
 ```
 
+## Development
+
+After cloning, install dependencies:
+
+```bash
+npm install
+```
+
+Type-check extensions against the pi SDK:
+
+```bash
+npm run typecheck
+```
+
 ## Usage
 
 After setup, pi loads resources from this package automatically. Use `pi config` to enable/disable individual resources, or `pi list` to verify installation.
