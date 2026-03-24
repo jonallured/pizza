@@ -1,3 +1,9 @@
+# Workflow
+
+- Never commit directly to main
+- Always create a feature branch for changes
+- Push the branch and open a PR
+
 # Commit Messages
 
 Follow these rules when writing git commit messages:
