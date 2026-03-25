@@ -30,7 +30,6 @@ describe("formatSessionInfo", () => {
   it("handles a malformed filename missing the UUID", () => {
     const file = "/tmp/sessions/2026-03-24T21-35-01-260Z.jsonl";
     const result = formatSessionInfo(file);
-    // No UUID means shortId is empty, should not crash
     expect(result).toContain("anon ()");
     expect(result).toContain("resume: pi --session ");
   });
@@ -38,7 +37,6 @@ describe("formatSessionInfo", () => {
   it("handles a malformed filename missing the timestamp", () => {
     const file = "/tmp/sessions/not-a-timestamp_cba0e307-253b-4b3b.jsonl";
     const result = formatSessionInfo(file);
-    // Timestamp doesn't match the regex, falls back to raw string
     expect(result).toContain("not-a-timestamp");
     expect(result).not.toContain("started");
   });
