@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { formatSessionInfo } from "./print-session-id.js";
+import { formatSessionInfo } from "../extensions/print-session-id.js";
 
 const SESSION_FILENAME =
   "/tmp/sessions/2026-03-24T21-35-01-260Z_cba0e307-253b-4b3b-b8be-0cba249dc065.jsonl";
