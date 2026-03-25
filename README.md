@@ -33,6 +33,12 @@ Type-check extensions against the pi SDK:
 npm run typecheck
 ```
 
+Run all CI checks locally:
+
+```bash
+npm run check
+```
+
 Format code:
 
 ```bash
