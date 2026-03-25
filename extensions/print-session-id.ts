@@ -1,7 +1,7 @@
 import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
 import * as path from "path";
 
-function formatSessionInfo(sessionFile: string, sessionName?: string): string {
+export function formatSessionInfo(sessionFile: string, sessionName?: string): string {
   const filename = path.basename(sessionFile);
 
   // Extract timestamp and short ID from filename

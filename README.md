@@ -33,6 +33,13 @@ Type-check extensions against the pi SDK:
 npm run typecheck
 ```
 
+Run tests:
+
+```bash
+npm test                                            # full suite (dot output)
+npx vitest run extensions/print-session-id.test.ts  # single file (verbose)
+```
+
 ## Usage
 
 After setup, pi loads resources from this package automatically. Use `pi config` to enable/disable individual resources, or `pi list` to verify installation.
