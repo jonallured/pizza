@@ -1,7 +1,10 @@
 import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
 import * as path from "path";
 
-export function formatSessionInfo(sessionFile: string, sessionName?: string): string {
+export function formatSessionInfo(
+  sessionFile: string,
+  sessionName?: string,
+): string {
   const filename = path.basename(sessionFile);
 
   // Extract timestamp and short ID from filename
@@ -18,13 +21,13 @@ export function formatSessionInfo(sessionFile: string, sessionName?: string): st
   );
   if (timeMatch) {
     const [, year, month, day, hour, min] = timeMatch;
-    const date = new Date(
-      `${year}-${month}-${day}T${hour}:${min}:00Z`,
-    );
-    timeStr = "started " + date.toLocaleString(undefined, {
-      hour: "numeric",
-      minute: "2-digit",
-    });
+    const date = new Date(`${year}-${month}-${day}T${hour}:${min}:00Z`);
+    timeStr =
+      "started " +
+      date.toLocaleString(undefined, {
+        hour: "numeric",
+        minute: "2-digit",
+      });
   }
 
   const label = sessionName ? `"${sessionName}"` : `anon (${shortId})`;

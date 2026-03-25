@@ -6,6 +6,8 @@
     "pi-package"
   ],
   "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "test": "vitest run --reporter=dot",
     "typecheck": "tsc --noEmit"
   },
@@ -25,6 +27,7 @@
   },
   "devDependencies": {
     "@mariozechner/pi-coding-agent": "^0.62.0",
+    "prettier": "^3.8.1",
     "typescript": "^6.0.2",
     "vitest": "^3.2.4"
   }
