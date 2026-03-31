@@ -1,6 +1,6 @@
 ---
 name: binks-worktree
-description: Create and manage git worktrees for the Binks monorepo. Use when the user wants to work on a separate branch in parallel, create a worktree, list worktrees, switch to a worktree, or clean up old worktrees. Handles the mismatch between the git root and the working directory (areas/internal-services/binks/web).
+description: Create and manage git worktrees for the Binks monorepo. Use when the user wants to work on a separate branch in parallel, create a worktree, list worktrees, switch to a worktree, or clean up old worktrees.
 ---
 
 # Binks Worktree Management
@@ -111,6 +111,10 @@ If the worktree has uncommitted changes, warn the user and ask before using `--f
 ```bash
 git worktree prune
 ```
+
+## Error Handling
+
+If any command fails (e.g., branch already exists, worktree directory already exists, tmux server not running), **stop immediately** and show the user the error. Do not attempt to recover or retry.
 
 ## Tips
 
