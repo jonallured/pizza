@@ -38,6 +38,7 @@ tmux new-session -d -s "binks-<worktree-name>" -c "$HOME/world/trees/<worktree-n
 ```
 
 Tell the user:
+
 - Switch with: `tmux switch-client -t binks-<worktree-name>` (or `Ctrl-b s` to pick)
 - They'll likely need to run `dev up` in the new worktree before working
 
@@ -73,6 +74,7 @@ dev tree remove <worktree-name> --force
 If the worktree has uncommitted changes, warn the user and ask before using `--force`.
 
 Bulk cleanup options:
+
 ```bash
 # Remove worktrees whose PRs have been merged
 dev tree remove --merged
